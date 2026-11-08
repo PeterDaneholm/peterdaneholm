@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171715">
+  <meta name="description" content="Selected film, photography and commercial projects by Your Name.">
+  <title>Projects — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">YN<span>—</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation"><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a><a class="active" href="projects.html">Projects</a><a href="about.html">About</a><a class="nav-contact" href="contact.html">Get in touch <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-intro">
+      <p class="eyebrow">The archive / 2022—26</p>
+      <h1>Selected <em>work.</em></h1>
+      <p class="intro">A selection of moving images, stills and collaborations. A little bit of everything, chosen with care.</p>
+    </section>
+
+    <div class="filter-bar" aria-label="Filter projects">
+      <button class="filter-button active" data-filter="all" aria-pressed="true">All work</button>
+      <button class="filter-button" data-filter="film" aria-pressed="false">Film</button>
+      <button class="filter-button" data-filter="photo" aria-pressed="false">Photography</button>
+      <button class="filter-button" data-filter="commercial" aria-pressed="false">Commercial</button>
+    </div>
+
+    <section class="project-list" aria-label="Projects">
+      <article class="project-entry" id="project-one" data-category="film">
+        <div class="project-visual"><img loading="lazy" decoding="async" src="assets/images/projects/project-01.jpg" alt="Still from Between the Lines"></div>
+        <div class="project-description"><p class="eyebrow">01 / Film · 2025</p><h2>Between the Lines</h2><p>A short film about the things left unsaid. Replace this with a concise description of the project, your role and the people involved.</p><p class="project-credit">Director · Cinematography · Edit</p></div>
+      </article>
+      <article class="project-entry" id="project-two" data-category="photo">
+        <div class="project-visual"><img loading="lazy" decoding="async" src="assets/images/projects/project-02.jpg" alt="Photograph from Quiet Hours"></div>
+        <div class="project-description"><p class="eyebrow">02 / Photography · 2024</p><h2>Quiet Hours</h2><p>An ongoing photographic study of familiar spaces and the small moments that happen in them.</p><p class="project-credit">Photographer · Personal work</p></div>
+      </article>
+      <article class="project-entry" id="project-three" data-category="commercial">
+        <div class="project-visual"><img loading="lazy" decoding="async" src="assets/images/projects/project-03.jpg" alt="Campaign image from Somewhere, Slowly"></div>
+        <div class="project-description"><p class="eyebrow">03 / Commercial · 2024</p><h2>Somewhere, Slowly</h2><p>A visual campaign made in collaboration with a small creative team. Add the client, production details and a link if the work lives elsewhere.</p><p class="project-credit">Director · Photographer</p></div>
+      </article>
+      <article class="project-entry" data-category="film">
+        <div class="project-visual"><img loading="lazy" decoding="async" src="assets/images/projects/project-04.jpg" alt="Still from project four"></div>
+        <div class="project-description"><p class="eyebrow">04 / Film · 2023</p><h2>Northbound</h2><p>A brief description that gives visitors a reason to watch. Keep it specific and let the image do most of the talking.</p><p class="project-credit">Camera · Edit</p></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark" href="index.html">YN<span>—</span></a><p>Independent film & photography<br>Copenhagen, Denmark</p><p class="footer-right">© <span data-year></span> Your Name <a href="contact.html">Say hello ↗</a></p></footer>
+</body>
+</html>
