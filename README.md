@@ -1,6 +1,6 @@
 # Film & photography portfolio
 
-A small static portfolio starter for GitHub Pages. No build step, framework or package manager required.
+Portfolio for Daneholm Production, showcasing projects and work, available packages and services with a bit about who I am and why I could be a right fit for your upcoming video needs.
 
 ## Included
 
@@ -11,54 +11,6 @@ A small static portfolio starter for GitHub Pages. No build step, framework or p
 - `assets/css/styles.css` — responsive visual system
 - `assets/js/main.js` — mobile navigation, current year and project filters
 - `assets/images/` — add your own image files here
-
-## Before publishing
-
-1. Replace `Your Name`, `YN`, the Copenhagen/location text, sample project names and descriptions.
-2. Replace `hello@example.com` and the social profile URLs in `contact.html`.
-3. Add your own images using the exact filenames referenced by the HTML:
-   - `assets/images/hero.jpg`
-   - `assets/images/about.jpg`
-   - `assets/images/projects/project-01.jpg` through `project-04.jpg`
-4. Update page titles and meta descriptions for your name and work.
-5. Test every page and link on desktop and mobile.
-
-The supplied image paths are intentional placeholders. Until you add images, those areas will appear empty/broken.
-
-## Publish with GitHub Pages
-
-1. Create a GitHub repository, for example `portfolio`.
-2. Upload the contents of this folder to the repository root (so `index.html` is at the root).
-3. In GitHub, open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
-5. Wait for the Pages URL to appear. A custom domain can be added in the same Pages settings.
-
-If you use a repository named `yourname.github.io`, the site can be served from the root account URL. For a normal repository, the URL includes the repository name.
-
-## Folder structure
-
-```text
-portfolio/
-├── index.html
-├── projects.html
-├── about.html
-├── contact.html
-├── README.md
-├── .nojekyll
-└── assets/
-    ├── css/
-    │   └── styles.css
-    ├── js/
-    │   └── main.js
-    └── images/
-        ├── hero.jpg
-        ├── about.jpg
-        └── projects/
-            ├── project-01.jpg
-            ├── project-02.jpg
-            ├── project-03.jpg
-            └── project-04.jpg
-```
 
 ## Image and performance notes
 
