@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#39434a"/><stop offset="1" stop-color="#b9aa91"/></linearGradient></defs>
+<rect width="900" height="1100" fill="url(#g)"/><circle cx="680" cy="310" r="210" fill="#f0e9dc" opacity=".12"/><path d="M0 760Q220 600 450 760T900 700V1100H0Z" fill="#171c19" opacity=".45"/><path d="M80 180L820 920M-80 420L560 1060" stroke="#fff" stroke-opacity=".12" stroke-width="2"/><text x="60" y="1020" fill="#fff" font-family="Arial,sans-serif" font-size="22" letter-spacing="5">PLACE / STORY — REPLACE</text>
+</svg>

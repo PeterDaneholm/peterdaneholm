@@ -1,32 +1,25 @@
-// Small progressive enhancements; the site remains usable without JavaScript.
-const navToggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector("#site-nav");
-
-if (navToggle && nav) {
-  navToggle.addEventListener("click", () => {
-    const open = navToggle.getAttribute("aria-expanded") === "true";
-    navToggle.setAttribute("aria-expanded", String(!open));
-    nav.classList.toggle("is-open", !open);
+(() => {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
+  if (toggle && nav) toggle.addEventListener("click", () => {
+    const open = nav.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.textContent = open ? "Close" : "Menu";
   });
-}
 
-document.querySelectorAll("[data-year]").forEach((el) => {
-  el.textContent = new Date().getFullYear();
-});
-
-const filterButtons = document.querySelectorAll("[data-filter]");
-const projectEntries = document.querySelectorAll(".project-entry[data-category]");
-
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
+  const buttons = document.querySelectorAll("[data-filter]");
+  const cards = document.querySelectorAll("[data-category]");
+  buttons.forEach(button => button.addEventListener("click", () => {
     const filter = button.dataset.filter;
-    filterButtons.forEach((item) => {
-      const selected = item === button;
-      item.classList.toggle("active", selected);
-      item.setAttribute("aria-pressed", String(selected));
-    });
-    projectEntries.forEach((entry) => {
-      entry.hidden = filter !== "all" && entry.dataset.category !== filter;
-    });
-  });
-});
+    buttons.forEach(item => item.setAttribute("aria-pressed", String(item === button)));
+    cards.forEach(card => card.hidden = filter !== "all" && !card.dataset.category.split(" ").includes(filter));
+  }));
+
+  const items = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const observer = new IntersectionObserver((entries, obs) => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add("is-visible"); obs.unobserve(entry.target); }
+    }), {threshold: .12});
+    items.forEach(item => observer.observe(item));
+  } else items.forEach(item => item.classList.add("is-visible"));
+})();
