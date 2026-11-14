@@ -35,7 +35,7 @@ This is a design-ready starter. The artwork and project names are placeholders, 
 
 - Add your showreel as `docs/assets/video/showreel.mp4`. Use a compressed H.264 MP4, ideally under 15–20 MB. The homepage poster remains visible if no video is present.
 - Replace the SVG artwork in `docs/assets/images/` with your own optimised images, then update the matching image paths in the HTML.
-- Replace `STUDIO / 01` with your chosen studio name.
+- Replace `Daneholm Productions` with your chosen studio name.
 - Replace `hello@yourstudio.com` with your real email.
 - Update the project titles, categories and descriptions with your actual work.
 - Replace Copenhagen if you want a different base location.
