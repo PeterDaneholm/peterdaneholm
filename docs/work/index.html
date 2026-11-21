@@ -23,58 +23,155 @@
             <section class="page-intro">
                 <div class="page-heading">
                     <p class="eyebrow">Selected projects / Film & photography</p>
-                    <h1>Story combined with visuals<br><em></em></h1>
-                    <p class="page-lede">Narrative films, achievments captured, commercial work, and home decoration.
-
+                    <h1>Work & collections</h1>
+                    <p class="page-lede">
+                        Films, photography and selected prints.
                     </p>
                 </div>
             </section>
-            <div class="filter-bar" aria-label="Filter projects"><button class="filter-button" data-filter="all"
-                    aria-pressed="true">All work</button><button class="filter-button" data-filter="film"
-                    aria-pressed="false">Film</button><button class="filter-button" data-filter="photo"
-                    aria-pressed="false">Photography</button><button class="filter-button" data-filter="sport"
-                    aria-pressed="false">Sport</button><button class="filter-button" data-filter="commercial"
-                    aria-pressed="false">Commercial</button></div>
-            <section class="work-grid">
+
+            <!-- CATEGORY NAVIGATION -->
+            <section class="section category-navigation">
                 <div class="project-grid">
-                    <article class="project-card" data-category="film sport"><a href="../contact/">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/8JO-vmprsgU?si=0u-CzFCe6oB0pxu1"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <div class="project-meta"><span>Film / Sport</span><span>01</span></div>
-                            <h2 class="project-title">Sport, movement & human stories</h2>
-                        </a></article>
-                    <article class="project-card" data-category="film commercial">
-                        <div class="project-image">
-                            <!-- <video muted loop playsinline poster="..assets/images/Interior juni-6.jpg">
-                                <source src="https://www.youtube.com/watch?v=8JO-vmprsgU&t=179s" type="video/mp4">
-                            </video>
-                             <img src="../assets/images/Interior juni-6.jpg"
-                                alt="Placeholder artwork for commercial film">
-                                -->
-                        </div>
-                        <div class="project-meta"><span>Film / Commercial</span><span>02</span></div>
-                        <h2 class="project-title">Promotional film for Social Brew</h2>
+
+                    <article class="project-card">
+                        <a href="#films">
+                            <div class="project-image">
+                                <img src="../assets/images/SportsStill2.jpg" alt="Film projects">
+                            </div>
+                            <div class="project-meta">
+                                <span>01 / Moving image</span>
+                                <span>↓</span>
+                            </div>
+                            <h2 class="project-title">Films</h2>
                         </a>
                     </article>
-                    <div class="work-media" aria-hidden="true"><video muted loop playsinline
-                            poster="../assets/images/Interior juni-6.jpg">
-                            <source src="../assets/video/Who is Social Brew.mp4" type="video/mp4">
-                        </video></div>
-                    <article class="project-card" data-category="photo"><a href="../contact/">
-                            <div class="project-image"><img src="../assets/images/Frozen Nyhavn-3.jpg"
-                                    alt="Placeholder artwork for photography"></div>
-                            <div class="project-meta"><span>Photography / Print</span><span>03</span></div>
-                            <h2 class="project-title">Decorate Your Walls</h2>
-                        </a></article>
-                    <article class="project-card" data-category="film photo"><a href="../contact/">
-                            <div class="project-image"><img src="../assets/images/work-place.svg"
-                                    alt="Placeholder artwork for documentary film and photography"></div>
-                            <div class="project-meta"><span>Film & photography / Story</span><span>04</span></div>
-                            <h2 class="project-title">A sense of place</h2>
-                        </a></article>
+
+                    <article class="project-card">
+                        <a href="#photography">
+                            <div class="project-image">
+                                <img src="../assets/images/Frozen Nyhavn-3.jpg" alt="Photography collection">
+                            </div>
+                            <div class="project-meta">
+                                <span>02 / Still image</span>
+                                <span>↓</span>
+                            </div>
+                            <h2 class="project-title">Photography</h2>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="#prints">
+                            <div class="project-image">
+                                <img src="../assets/images/Marmorkirken print.jpg" alt="Photographic prints">
+                            </div>
+                            <div class="project-meta">
+                                <span>03 / Collections</span>
+                                <span>↓</span>
+                            </div>
+                            <h2 class="project-title">Prints</h2>
+                        </a>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- FILMS -->
+            <section class="section work-category" id="films">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">01 / Moving image</p>
+                        <h2>Films</h2>
+                    </div>
+                </div>
+
+                <div class="project-grid">
+
+                    <!-- DUPLICATE THIS ARTICLE TO ADD A FILM -->
+                    <article class="project-card" data-category="sport">
+                        <a href="">
+                            <div class="project-image">
+                                <img src="../assets/images/SportsStill2.jpg" alt="Sports film thumbnail">
+                                <span class="play-icon">▶</span>
+                            </div>
+                            <div class="project-meta">
+                                <span>Sport</span>
+                                <span>01</span>
+                            </div>
+                            <h3 class="project-title">Project title</h3>
+                        </a>
+                    </article>
+
+                    <article class="project-card" data-category="commercial">
+                        <a href="YOUR_VIDEO_LINK">
+                            <div class="project-image">
+                                <img src="../assets/images/Interior juni-6.jpg" alt="Commercial film thumbnail">
+                                <span class="play-icon">▶</span>
+                            </div>
+                            <div class="project-meta">
+                                <span>Commercial</span>
+                                <span>02</span>
+                            </div>
+                            <h3 class="project-title">Project title</h3>
+                        </a>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- PHOTOGRAPHY -->
+            <section class="section work-category" id="photography">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">02 / Still image</p>
+                        <h2>Photography</h2>
+                    </div>
+                </div>
+
+                <div class="project-grid">
+
+                    <!-- DUPLICATE THIS ARTICLE TO ADD A PHOTO -->
+                    <article class="project-card">
+                        <a href="../assets/images/DUMBO overpass-1.jpg">
+                            <div class="project-image">
+                                <img src="../assets/images/DUMBO overpass-1.jpg" alt="Photography project">
+                            </div>
+                            <div class="project-meta">
+                                <span>Personal / Commissioned</span>
+                                <span>01</span>
+                            </div>
+                            <h3 class="project-title">Project title</h3>
+                        </a>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- PRINTS -->
+            <section class="section work-category" id="prints">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">03 / Collections</p>
+                        <h2>Prints</h2>
+                    </div>
+                </div>
+
+                <div class="project-grid">
+
+                    <!-- DUPLICATE THIS ARTICLE TO ADD A PRINT -->
+                    <article class="project-card">
+                        <a href="../assets/images/Manhatten Skyline Print.jpg">
+                            <div class="project-image">
+                                <img src="../assets/images/Manhatten Skyline Print.jpg" alt="Photographic print">
+                            </div>
+                            <div class="project-meta">
+                                <span>Available as a print</span>
+                                <span>01</span>
+                            </div>
+                            <h3 class="project-title">Print title</h3>
+                        </a>
+                    </article>
+
                 </div>
             </section>
         </main>
